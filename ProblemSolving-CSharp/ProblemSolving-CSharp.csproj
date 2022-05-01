@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="009.PalindromeNumber.cs" />
+    <Compile Remove="0009.PalindromeNumber.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="009.PalindromeNumber.cs" />
+    <None Include="0009.PalindromeNumber.cs" />
   </ItemGroup>
 
 </Project>
