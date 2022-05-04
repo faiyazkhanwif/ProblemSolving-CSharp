@@ -1,9 +1,11 @@
-﻿int test(int[] nums)
+﻿int test(int[] nums, int k)
 {
 
-    return 0;
+return nums[k];
 }
+/*[3,1,3,4,3]
+6
+ */
+int[] arr = { 3, 1, 3, 4, 3 };
 
-int[] arr = {2,1 };
-
-Console.WriteLine(test(arr));
+Console.WriteLine(test(arr,6));
