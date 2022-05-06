@@ -1,11 +1,12 @@
-﻿int test(int[] nums, int k)
+﻿string test(string s, int k)
 {
 
-return nums[k];
+    string nres="";
+    return nres;
 }
-/*[3,1,3,4,3]
-6
+/*"deeedbbcccbdaa"
+3
  */
 int[] arr = { 3, 1, 3, 4, 3 };
 
-Console.WriteLine(test(arr,6));
+Console.WriteLine(test("deeedbbcccbdaa", 3));
