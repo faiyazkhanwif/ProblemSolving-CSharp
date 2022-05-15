@@ -1,83 +1,28 @@
-﻿IList<string> test(string[] words)
+﻿int MaxConsecutive(int bottom, int top, int[] special)
 {
-    IList<string> ans = new List<string>();    
-    int prevInd = 0;
-    int currInd = 1;
+    int maxflCnt = 0;
+    Array.Sort(special);
 
-    while (currInd<words.Length)
+    for (int i = 0; i < special.Length; i++)
     {
-        string prevWord = words[prevInd];
-        string currWord = words[currInd];
-
-        if (isAnagram(prevWord, currWord))
+        int temp = (special[i] - bottom);
+        if (temp > maxflCnt)
         {
-            words[currInd] = "-";
-            currInd++;
+            maxflCnt = temp;
         }
-        else
-        {
-            prevInd = currInd;
-            currInd++;
-        }
+        bottom = special[i] + 1;
     }
-
-    for(int i=0; i<words.Length; i++)
+    int cornercase = top - special[special.Length - 1];
+    if (cornercase > maxflCnt)
     {
-        if (!words[i].Equals("-"))
-        {
-            ans.Add(words[i]);
-        }
+        maxflCnt = cornercase;
     }
-    return ans;
+    return maxflCnt;
+
 }
-bool isAnagram(String a, String b)
-{
-    if (a.Length != b.Length)
-    {
-        return false;
-    }
-
-    Dictionary<char, int> map = new Dictionary<char, int>();
-
-    for (int i = 0; i < a.Length; i++)
-    {
-
-        if (map.ContainsKey(a[i]))
-        {
-
-            map[a[i]] =
-              map[a[i]] + 1;
-        }
-        else
-        {
-            map.Add(a[i], 1);
-        }
-    }
-
-    for (int i = 0; i < b.Length; i++)
-    {
-        if (map.ContainsKey(b[i]))
-        {
-
-            map[b[i]] =
-              map[b[i]] - 1;
-        }
-    }
-
-    var keys = map.Keys;
-
-    foreach (char key in keys)
-    {
-        if (map[key] != 0)
-        {
-            return false;
-        }
-    }
-    return true;
-}
+    
 /*
  [3,5,0,3,4]
  */
 string[] arr = { "abba", "baba", "bbaa", "cd", "cd" };
 
-Console.WriteLine(test(arr));
