@@ -20,7 +20,7 @@ namespace ProblemSolving_CSharp
             string firstHalf = "";
             string secondHalf = "";
 
-            for (int i = 0; i < sLength; i++)
+            for (int i = 0; i < halfLength; i++)
             {
                 firstHalf += s[i].ToString();
                 secondHalf += s[i+halfLength].ToString();
