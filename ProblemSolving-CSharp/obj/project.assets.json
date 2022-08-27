@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Coding Files\\.NET\\ProblemSolving-CSharp\\ProblemSolving-CSharp\\ProblemSolving-CSharp.csproj",
+      "projectUniqueName": "E:\\CodingFiles\\.NET\\ProblemSolving-CSharp\\ProblemSolving-CSharp\\ProblemSolving-CSharp.csproj",
       "projectName": "ProblemSolving-CSharp",
-      "projectPath": "E:\\Coding Files\\.NET\\ProblemSolving-CSharp\\ProblemSolving-CSharp\\ProblemSolving-CSharp.csproj",
+      "projectPath": "E:\\CodingFiles\\.NET\\ProblemSolving-CSharp\\ProblemSolving-CSharp\\ProblemSolving-CSharp.csproj",
       "packagesPath": "C:\\Users\\faiya\\.nuget\\packages\\",
-      "outputPath": "E:\\Coding Files\\.NET\\ProblemSolving-CSharp\\ProblemSolving-CSharp\\obj\\",
+      "outputPath": "E:\\CodingFiles\\.NET\\ProblemSolving-CSharp\\ProblemSolving-CSharp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\faiya\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
