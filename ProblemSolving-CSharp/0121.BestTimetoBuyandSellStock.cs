@@ -8,6 +8,7 @@ namespace ProblemSolving_CSharp
 {
     internal class _0121
     {
+        //O(n)^2
         public int MaxProfit(int[] prices)
         {
             int maxProfit = 0;
@@ -26,6 +27,34 @@ namespace ProblemSolving_CSharp
                     }
                 }
             }
+            return maxProfit;
+        }
+
+        //O(n)
+        public int MaxProfitOpt(int[] prices)
+        {
+            int maxProfit = 0;
+            int currStock = int.MinValue;
+
+            for (int i = prices.Length - 1; i >= 0; i--)
+            {
+                if (prices[i] > currStock)
+                {
+                    currStock = prices[i];
+                }
+                else if (prices[i] < currStock)
+                {
+                    int profit = currStock - prices[i];
+
+                    if (maxProfit < profit)
+                    {
+                        maxProfit = profit;
+                    }
+                }
+
+
+            }
+
             return maxProfit;
         }
     }
