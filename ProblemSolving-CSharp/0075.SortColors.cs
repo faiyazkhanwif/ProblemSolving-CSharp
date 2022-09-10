@@ -10,15 +10,7 @@ namespace ProblemSolving_CSharp
     {
         public void SortColors(int[] nums)
         {
-            int max = int.MinValue; 
-            for (int i = 0; i < nums.Length; i++)
-            {
-                if (nums[i]>max)
-                {
-                    max = nums[i];
-                }
-            }
-
+            int max = 2;
             Dictionary<int, int> dic = new Dictionary<int, int>();
 
             for (int i = 0; i < nums.Length; i++)
@@ -48,7 +40,7 @@ namespace ProblemSolving_CSharp
 
                 }
             }
-
         }
+
     }
 }
