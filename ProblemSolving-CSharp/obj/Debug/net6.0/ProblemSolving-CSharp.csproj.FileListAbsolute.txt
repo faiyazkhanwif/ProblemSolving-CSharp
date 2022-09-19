@@ -13,3 +13,18 @@ E:\Coding Files\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.
 E:\Coding Files\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ProblemSolving-CSharp.pdb
 E:\Coding Files\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ProblemSolving-CSharp.genruntimeconfig.cache
 E:\Coding Files\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ref\ProblemSolving-CSharp.dll
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\bin\Debug\net6.0\ProblemSolving-CSharp.exe
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\bin\Debug\net6.0\ProblemSolving-CSharp.deps.json
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\bin\Debug\net6.0\ProblemSolving-CSharp.runtimeconfig.json
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\bin\Debug\net6.0\ProblemSolving-CSharp.dll
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\bin\Debug\net6.0\ProblemSolving-CSharp.pdb
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ProblemSolving-CSharp.csproj.AssemblyReference.cache
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ProblemSolving-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ProblemSolving-CSharp.AssemblyInfoInputs.cache
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ProblemSolving-CSharp.AssemblyInfo.cs
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ProblemSolving-CSharp.csproj.CoreCompileInputs.cache
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ProblemSolving-CSharp.dll
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\refint\ProblemSolving-CSharp.dll
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ProblemSolving-CSharp.pdb
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ProblemSolving-CSharp.genruntimeconfig.cache
+E:\CodingFiles\.NET\ProblemSolving-CSharp\ProblemSolving-CSharp\obj\Debug\net6.0\ref\ProblemSolving-CSharp.dll
