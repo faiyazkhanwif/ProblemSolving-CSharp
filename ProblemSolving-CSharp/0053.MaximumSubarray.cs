@@ -22,10 +22,33 @@ namespace ProblemSolving_CSharp
 
                     for (int k = i; k <= j; k++)
                     {
-                        tempSize+=nums[k];
+                        tempSize += nums[k];
                     }
 
-                    if (tempSize>maxSize)
+                    if (tempSize > maxSize)
+                    {
+                        maxSize = tempSize;
+                    }
+                }
+            }
+
+            return maxSize;
+
+        }
+
+        //O(n^2)  passes 205 / 209
+
+        public int MaxSubArrayOpti(int[] nums)
+        {
+            int maxSize = int.MinValue;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                int tempSize = 0;
+                for (int j = i; j < nums.Length; j++)
+                {
+                    tempSize += nums[j];
+                    if (tempSize > maxSize)
                     {
                         maxSize = tempSize;
                     }
