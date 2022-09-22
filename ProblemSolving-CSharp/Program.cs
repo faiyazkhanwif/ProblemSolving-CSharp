@@ -1,39 +1,56 @@
-﻿
-int count = 0;
-int fibonacciDP(int n)
+﻿int ClimbStairs(int n)
+{
+    return climb(n);
+
+    int climb(int stepsLeft)
+    {
+        if (stepsLeft < 0)
+        {
+            return 0;
+        }
+
+        if (stepsLeft == 0)
+        {
+            return 1;
+        }
+
+        return climb(stepsLeft - 1) + climb(stepsLeft - 2);
+
+    }
+}
+
+//O(n) Top down DP with Memoization
+int ClimbStairsDP(int n)
 {
     Dictionary<int, int> dpCache = new Dictionary<int, int>();
-    return fib(n);
-    //Creating a local function "fib" so that we don't need to create "dpCache" as a global variable.
-    int fib(int n)
+    return climb(n);
+
+    int climb(int stepsLeft)
     {
-        count++;
-        if (dpCache.ContainsKey(n))
+        if (dpCache.ContainsKey(stepsLeft))
         {
-            return dpCache[n];
+            return dpCache[stepsLeft];
         }
         else
         {
-            if (n == 0)
+            if (stepsLeft < 0)
             {
                 return 0;
             }
-            else if (n == 1)
+
+            if (stepsLeft == 0)
             {
                 return 1;
             }
-            else
-            {
-                dpCache.TryAdd(n - 1, fib(n - 1));
-                dpCache.TryAdd(n - 2, fib(n - 2));
-                return dpCache[n - 1] + dpCache[n - 2];
-            }
-        }
-    } 
 
-} 
- 
-Console.WriteLine(fibonacciDP(10));
-Console.WriteLine("Count: "+count);
+            dpCache[stepsLeft] = climb(stepsLeft - 1) + climb(stepsLeft - 2);
+
+            return dpCache[stepsLeft];
+
+        }
+    }
+}
+
+Console.WriteLine(ClimbStairsDP(3)); 
 //Console.WriteLine(string.Compare("YMQDBkOWy", "ubIEXAO"));
 
