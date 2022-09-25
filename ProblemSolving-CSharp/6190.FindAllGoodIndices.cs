@@ -8,6 +8,7 @@ namespace ProblemSolving_CSharp
 {
     internal class _6190
     {
+        //Bruteforce - passes 64 / 66 test cases.
         public IList<int> GoodIndices(int[] nums, int k)
         {
             IList<int> result = new List<int>();
@@ -16,36 +17,39 @@ namespace ProblemSolving_CSharp
 
             while (i < (nums.Length - k))
             {
-                Console.WriteLine("i: "+i);
                 bool increasingRight = true;
                 bool increasingLeft = true;
                 int indR = i + 1;
+                int maxL = int.MinValue;
+                int maxR = int.MinValue;
                 int indL = i - 1;
 
-                while (indL-1>=0)
+                //Traversing from left to right
+                for (int j = 0; j < k; j++)
                 {
-                    if (nums[indL - 1] < nums[indL])
+                    if (nums[indL] < maxL)
                     {
-                        Console.WriteLine("NOTL");
                         increasingLeft = false;
                         break;
                     }
+                    else
+                    {
+                        maxL = nums[indL];
+                    }
                     indL--;
                 }
-
-                while (indR+1<nums.Length)
+                //Traversing from right to left
+                for (int j = 0; j < k; j++)
                 {
-                    if (increasingLeft == false)
+                    if (nums[indR] < maxR)
                     {
-                        break;
-                    }
-                    if (nums[indR] > nums[indR+1])
-                    {
-                        Console.WriteLine("NOTR");
                         increasingRight = false;
                         break;
                     }
-
+                    else
+                    {
+                        maxR = nums[indR];
+                    }
                     indR++;
                 }
 

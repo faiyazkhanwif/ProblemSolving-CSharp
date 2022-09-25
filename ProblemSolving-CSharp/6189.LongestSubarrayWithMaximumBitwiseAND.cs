@@ -8,38 +8,31 @@ namespace ProblemSolving_CSharp
 {
     internal class _6189
     {
+        //O(n)
         public int LongestSubarray(int[] nums)
         {
-            int n = nums.Length;
+            int maxNum = int.MinValue;
+            int subArrLen = 0;
+            int res = 0;
 
-            Dictionary<int, int> ANDValLength = new Dictionary<int, int>();
-
-            int maxAND = int.MinValue;
-            // Initialize result 
-
-            // Pick starting points of subarrays 
-            for (int i = 0; i < n; i++)
+            foreach (int num in nums)
             {
-                // to store AND of current subarray  
-                int curr_and = 0;
-
-                // Pick ending points of  
-                // subarrays starting with i 
-                for (int j = i; j < n; j++)
-                {
-                    curr_and = curr_and & nums[j];
-                    if (ANDValLength.ContainsKey(curr_and))
-                    {
-                        ANDValLength[curr_and] = Math.Max(j + 1, ANDValLength[curr_and]);
-                    }
-                    else
-                    {
-                        ANDValLength[curr_and] = j + 1;
-                    }
-                    maxAND = Math.Max(maxAND, curr_and);
-                }
+                maxNum = Math.Max(maxNum, num);
             }
-            return ANDValLength[maxAND];
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == maxNum)
+                {
+                    subArrLen++;
+                }
+                else
+                {
+                    subArrLen = 0; // As a subarray is a contiguous sequence of elements, we start the count again.
+                }
+                res = Math.Max(res, subArrLen); // Check and store the current length if it is larger.
+            }
+            return res;
         }
     }
 }
