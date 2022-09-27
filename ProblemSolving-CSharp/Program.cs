@@ -1,4 +1,4 @@
 ﻿
- 
-//Console.WriteLine(string.Compare("YMQDBkOWy", "ubIEXAO"));
+string sb = "hihello";
+Console.WriteLine(sb.Substring(0,1));
 
