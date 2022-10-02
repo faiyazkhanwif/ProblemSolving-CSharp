@@ -8,6 +8,7 @@ namespace ProblemSolving_CSharp
 {
     internal class _6193
     {
+        //O(m*n)
         public int MaxSum(int[][] grid)
         {
             int m = grid.Length;
