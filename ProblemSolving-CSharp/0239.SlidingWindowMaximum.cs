@@ -53,7 +53,7 @@ namespace ProblemSolving_CSharp
         }
 
         //O(n) - LinkedList (Deque)
-        public int[] MaxSlidingWindow(int[] nums, int k)
+        public int[] MaxSlidingWindowOpti(int[] nums, int k)
         {
             int[] result = new int[nums.Length - k + 1];
             int resultInd = 0;
