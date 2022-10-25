@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProblemSolving_CSharp
 {
-    internal class _0560
+    internal class _0003
     {
         //O(n) - LinkedList
         public int LengthOfLongestSubstring(string s)
