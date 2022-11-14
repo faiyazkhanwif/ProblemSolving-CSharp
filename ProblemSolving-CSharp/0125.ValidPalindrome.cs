@@ -10,7 +10,7 @@ namespace ProblemSolving_CSharp
     {
         public bool isPalindrome(string s)
         {
-            s = s.ToLower().Replace("[^a-zA-Z0-9 -]", "");
+            s = s.ToLower().Replace("[^A-Za-z0-9]", "");
             int i = 0;
             int j = s.Length - 1;
             while (i <= j)
