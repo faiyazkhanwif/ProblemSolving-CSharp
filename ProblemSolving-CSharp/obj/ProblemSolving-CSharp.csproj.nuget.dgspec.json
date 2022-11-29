@@ -13,8 +13,12 @@
         "packagesPath": "C:\\Users\\faiya\\.nuget\\packages\\",
         "outputPath": "E:\\CodingFiles\\.NET\\ProblemSolving-CSharp\\ProblemSolving-CSharp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
           "C:\\Users\\faiya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/ItmewMVOrK9hJgUlSpZD27zlcdtuIjTrSU8fOMtxv4CYxiTmoz/api": {}
         },
         "frameworks": {
           "net6.0": {
