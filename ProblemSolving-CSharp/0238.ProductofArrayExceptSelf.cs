@@ -53,14 +53,14 @@ namespace ProblemSolving_CSharp
                 leftProduct[i + 1] = nums[i] * leftProduct[i];
             }
 
-            for (int i = nums.Length-1; i >=0; i--)
+            for (int i = nums.Length - 1; i >= 0; i--)
             {
-                if (i-1 < 0)
+                if (i - 1 < 0)
                 {
                     break;
                 }
 
-                rightProduct[i-1] = nums[i] * rightProduct[i];
+                rightProduct[i - 1] = nums[i] * rightProduct[i];
             }
 
             for (int i = 0; i < leftProduct.Length; i++)
@@ -77,30 +77,25 @@ namespace ProblemSolving_CSharp
         {
             int[] result = new int[nums.Length];
 
-            result[0] = 1; 
+            int leftProd = 1;
 
             for (int i = 0; i < nums.Length; i++)
             {
-                if (i + 1 == result.Length)
+                if (i > 0)
                 {
-                    break;
+                    leftProd = leftProd * nums[i - 1];
                 }
-                result[i + 1] = nums[i] * result[i];
+                result[i] = leftProd;
             }
 
-            int rightProduct = 1;
+            int rightProd = 1;
             for (int i = nums.Length - 1; i >= 0; i--)
             {
-                if (i - 1 < 0)
-                {
-                    break;
-                }
-                result[i] = result[i] * rightProduct;
-
-                rightProduct = nums[i] * rightProduct;
-            } 
-
+                result[i] = rightProd * result[i];
+                rightProd = rightProd * nums[i];
+            }
             return result;
+
         }
     }
 }
