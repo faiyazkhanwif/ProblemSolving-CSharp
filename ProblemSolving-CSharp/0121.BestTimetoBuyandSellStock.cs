@@ -34,27 +34,26 @@ namespace ProblemSolving_CSharp
         public int MaxProfitOpt(int[] prices)
         {
             int maxProfit = 0;
-            int currStock = int.MinValue;
+            int buyingDay = 0;
+            int sellingDay = 1;
 
-            for (int i = prices.Length - 1; i >= 0; i--)
+            while (sellingDay < prices.Length)
             {
-                if (prices[i] > currStock)
+                if (prices[buyingDay] > prices[sellingDay])
                 {
-                    currStock = prices[i];
+                    buyingDay++;
+                    sellingDay=buyingDay+1;
                 }
-                else if (prices[i] < currStock)
-                {
-                    int profit = currStock - prices[i];
-
-                    if (maxProfit < profit)
+                else
+                { 
+                    int profit = prices[sellingDay] - prices[buyingDay];
+                    if (profit>maxProfit)
                     {
                         maxProfit = profit;
                     }
+                    sellingDay++;
                 }
-
-
             }
-
             return maxProfit;
         }
     }
