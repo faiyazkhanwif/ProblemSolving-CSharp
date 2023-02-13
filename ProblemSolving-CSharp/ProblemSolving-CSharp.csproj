@@ -10,10 +10,12 @@
 
   <ItemGroup>
     <Compile Remove="0009.PalindromeNumber.cs" />
+    <Compile Remove="0997.FindtheTownJudge.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="0009.PalindromeNumber.cs" />
+    <None Include="0997.FindtheTownJudge.cs" />
   </ItemGroup>
 
 </Project>
