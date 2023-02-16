@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -45,6 +46,22 @@ namespace ProblemSolving_CSharp
                 }
 
                 return prev;
+
+            }
+
+            //Recursive
+            public ListNode ReverseListRec(ListNode head)
+            {
+                if (head == null || head.next ==null)
+                {
+                    return head;
+                }
+
+                ListNode reversedListHead = ReverseListRec(head.next);
+
+                head.next.next = head;
+                head.next = null;
+                return reversedListHead;
 
             }
         }
