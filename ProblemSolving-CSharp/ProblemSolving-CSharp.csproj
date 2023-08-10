@@ -11,11 +11,13 @@
   <ItemGroup>
     <Compile Remove="0009.PalindromeNumber.cs" />
     <Compile Remove="0997.FindtheTownJudge.cs" />
+    <Compile Remove="LeetcodeTopInterview150\0219.ContainsDuplicateII.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="0009.PalindromeNumber.cs" />
     <None Include="0997.FindtheTownJudge.cs" />
+    <None Include="LeetcodeTopInterview150\0219.ContainsDuplicateII.cs" />
   </ItemGroup>
 
 </Project>

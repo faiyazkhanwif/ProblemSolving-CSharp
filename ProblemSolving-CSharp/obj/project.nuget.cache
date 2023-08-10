@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nZNY8l5h6vaCC5hXbPwNgiCN1yKAEiUQuZ76nhoGHR3SvVLBDOito9s3Ff6CjnZ4J988V8QcUoJSIMgaHyfSFw==",
+  "dgSpecHash": "krd3g+zUnUd9e/FWrhma6MyOElbPZ7/GVPgYL4VYXS5ELmIME9xOz1HKWQvEwZ7l8fETaF4nPe3KuXcaTf6ywQ==",
   "success": true,
-  "projectFilePath": "E:\\CodingFiles\\.NET\\ProblemSolving-CSharp\\ProblemSolving-CSharp\\ProblemSolving-CSharp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\MyFiles\\Study\\ProblemSolving-CSharp\\ProblemSolving-CSharp\\ProblemSolving-CSharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Danie\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.21\\microsoft.windowsdesktop.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.21\\microsoft.netcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.21\\microsoft.aspnetcore.app.ref.6.0.21.nupkg.sha512",
+    "C:\\Users\\Danie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.21\\microsoft.netcore.app.host.win-x64.6.0.21.nupkg.sha512"
+  ],
   "logs": []
 }
