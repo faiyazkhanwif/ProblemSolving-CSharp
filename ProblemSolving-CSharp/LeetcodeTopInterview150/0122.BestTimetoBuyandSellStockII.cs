@@ -10,7 +10,28 @@ namespace ProblemSolving_CSharp.LeetcodeTopInterview150
     {
         public int MaxProfit(int[] prices)
         {
-            return 0;
+            int maxProfit = 0;
+
+            int buyingIndex = 0;
+            int sellingIndex = 1;
+
+            while (buyingIndex < sellingIndex && sellingIndex < prices.Length)
+            {
+                if (prices[buyingIndex] < prices[sellingIndex])
+                {
+                    maxProfit += prices[sellingIndex] - prices[buyingIndex];
+                    buyingIndex++;
+                    sellingIndex++;
+                }
+                else
+                {
+                    buyingIndex = sellingIndex;
+                    sellingIndex++;
+                }
+
+            }
+
+            return maxProfit;
         }
     }
 }
