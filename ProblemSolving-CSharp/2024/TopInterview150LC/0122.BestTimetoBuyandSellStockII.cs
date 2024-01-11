@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProblemSolving_CSharp.LeetcodeTopInterview150
+namespace ProblemSolving_CSharp._2024.TopInterview150LC
 {
     internal class _0122
     {
