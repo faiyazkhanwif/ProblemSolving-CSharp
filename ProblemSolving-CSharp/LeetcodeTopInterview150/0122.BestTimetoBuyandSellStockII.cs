@@ -11,24 +11,24 @@ namespace ProblemSolving_CSharp.LeetcodeTopInterview150
         public int MaxProfit(int[] prices)
         {
             int maxProfit = 0;
-
             int buyingIndex = 0;
+
             int sellingIndex = 1;
 
-            while (buyingIndex < sellingIndex && sellingIndex < prices.Length)
+            while (buyingIndex < prices.Length && sellingIndex < prices.Length)
             {
-                if (prices[buyingIndex] < prices[sellingIndex])
+                if (prices[buyingIndex] > prices[sellingIndex])
                 {
-                    maxProfit += prices[sellingIndex] - prices[buyingIndex];
-                    buyingIndex++;
-                    sellingIndex++;
+                    buyingIndex = sellingIndex;
                 }
                 else
                 {
-                    buyingIndex = sellingIndex;
-                    sellingIndex++;
-                }
+                    int profit = prices[sellingIndex] - prices[buyingIndex];
+                    maxProfit += profit;
 
+                    buyingIndex = sellingIndex + 1;
+                }
+                sellingIndex++;
             }
 
             return maxProfit;
